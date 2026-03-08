@@ -18,9 +18,15 @@ export default function AuthLayout({ children, title, subtitle }) {
                     {/* Left Column: Marketing Content */}
                     <div className="flex flex-col justify-between p-2 lg:p-6 h-full overflow-hidden">
 
-                        {/* Logo at Top Left */}
+                        {/* Text Logo */}
                         <div className="mb-4">
-                            <img src="/src/assets/logo.png" alt="SkyLine Logo" className="h-12 lg:h-16 w-auto" />
+                            <h2 className="text-2xl lg:text-3xl font-bold tracking-tight text-black flex items-baseline gap-2">
+                                SKYLINE
+                                <span className="relative inline-block mt-1">
+                                    <span className="relative z-10 text-xl lg:text-2xl">Software</span>
+                                    <span className="absolute bottom-1 left-0 w-full h-1.5 lg:h-2 bg-[#D9FF5A] -z-0 opacity-80 rounded-full"></span>
+                                </span>
+                            </h2>
                         </div>
 
                         {/* Typography Section */}
@@ -69,7 +75,7 @@ export default function AuthLayout({ children, title, subtitle }) {
                     {/* Right Column: Dynamic Form Area */}
                     <div className="relative w-full h-full rounded-[2rem] overflow-hidden bg-black flex flex-col justify-center items-center">
                         {/* Background Image */}
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop" alt="Modern office architecture" className="absolute inset-0 w-full h-full object-cover opacity-60" />
+                        <img src="/src/assets/imgg.jpg" alt="Modern office architecture" className="absolute inset-0 w-full h-full object-cover opacity-60" />
 
                         {/* Top Status Text */}
                         <div className="absolute top-6 left-0 w-full text-center z-10">
